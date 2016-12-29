@@ -1,0 +1,33 @@
+actionid=linters
+msg=getenv
+cmdargs=[local('/project-config/.tox/linters/bin/pip'), 'install', '--pre', '-r/project-config/test-requirements.txt']
+env={'PYTHONIOENCODING': 'utf_8', 'http_proxy': 'http://www-proxy.us.oracle.com:80/', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LOGNAME': 'root', 'USER': 'root', 'PATH': '/project-config/.tox/linters/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'HOME': '/project-config/.tox/linters/tmp/pseudo-home', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm', 'SHELL': '/bin/bash', 'SHLVL': '2', 'MC_TMPDIR': '/tmp/mc-root', 'https_proxy': 'http://www-proxy.us.oracle.com:80/', 'PIP_CONFIG_FILE': '/etc/pip.conf', 'SUDO_USER': 'o3lroot', 'USERNAME': 'root', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MC_SID': '16242', 'SUDO_UID': '1000', 'XDG_SESSION_ID': '4', '_': '/usr/bin/tox', 'SUDO_COMMAND': '/bin/su', 'SUDO_GID': '1000', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'OLDPWD': '/project-config/jenkins', 'HISTCONTROL': 'ignoredups:ignorespace', 'PWD': '/project-config', 'MAIL': '/var/mail/root', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'}
+Downloading/unpacking hacking>=0.10,<0.11 (from -r /project-config/test-requirements.txt (line 1))
+  Downloading hacking-0.10.2-py2.py3-none-any.whl
+Downloading/unpacking bashate>=0.2 (from -r /project-config/test-requirements.txt (line 2))
+  Downloading bashate-0.5.1-py2-none-any.whl
+Downloading/unpacking pep8==1.5.7 (from hacking>=0.10,<0.11->-r /project-config/test-requirements.txt (line 1))
+  Downloading pep8-1.5.7-py2.py3-none-any.whl
+Downloading/unpacking pyflakes==0.8.1 (from hacking>=0.10,<0.11->-r /project-config/test-requirements.txt (line 1))
+  Downloading pyflakes-0.8.1-py2.py3-none-any.whl
+Downloading/unpacking pbr>=0.11,<2.0 (from hacking>=0.10,<0.11->-r /project-config/test-requirements.txt (line 1))
+Downloading/unpacking mccabe==0.2.1 (from hacking>=0.10,<0.11->-r /project-config/test-requirements.txt (line 1))
+  Downloading mccabe-0.2.1.tar.gz
+  Running setup.py (path:/project-config/.tox/linters/build/mccabe/setup.py) egg_info for package mccabe
+    
+Downloading/unpacking six>=1.7.0 (from hacking>=0.10,<0.11->-r /project-config/test-requirements.txt (line 1))
+  Downloading six-1.10.0-py2.py3-none-any.whl
+Downloading/unpacking flake8==2.2.4 (from hacking>=0.10,<0.11->-r /project-config/test-requirements.txt (line 1))
+  Downloading flake8-2.2.4.tar.gz
+  Running setup.py (path:/project-config/.tox/linters/build/flake8/setup.py) egg_info for package flake8
+    
+Downloading/unpacking Babel>=1.3 (from bashate>=0.2->-r /project-config/test-requirements.txt (line 2))
+Downloading/unpacking pytz>=0a (from Babel>=1.3->bashate>=0.2->-r /project-config/test-requirements.txt (line 2))
+Installing collected packages: hacking, bashate, pep8, pyflakes, pbr, mccabe, six, flake8, Babel, pytz
+  Running setup.py install for mccabe
+    
+  Running setup.py install for flake8
+    
+    Installing flake8 script to /project-config/.tox/linters/bin
+Successfully installed hacking bashate pep8 pyflakes pbr mccabe six flake8 Babel pytz
+Cleaning up...
